@@ -1,5 +1,5 @@
 {
-  "name": "tabularview",
+  "name": "@mayanks0307/tabularview",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^13.1.0",

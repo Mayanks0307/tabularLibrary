@@ -1,5 +1,5 @@
 {
-  "name": "tabularview",
+  "name": "@mayanks0307/tabularview",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^13.1.0",
@@ -8,23 +8,23 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "module": "fesm2015/tabularview.mjs",
-  "es2020": "fesm2020/tabularview.mjs",
-  "esm2020": "esm2020/tabularview.mjs",
-  "fesm2020": "fesm2020/tabularview.mjs",
-  "fesm2015": "fesm2015/tabularview.mjs",
-  "typings": "tabularview.d.ts",
+  "module": "fesm2015/mayanks0307-tabularview.mjs",
+  "es2020": "fesm2020/mayanks0307-tabularview.mjs",
+  "esm2020": "esm2020/mayanks0307-tabularview.mjs",
+  "fesm2020": "fesm2020/mayanks0307-tabularview.mjs",
+  "fesm2015": "fesm2015/mayanks0307-tabularview.mjs",
+  "typings": "mayanks0307-tabularview.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./tabularview.d.ts",
-      "esm2020": "./esm2020/tabularview.mjs",
-      "es2020": "./fesm2020/tabularview.mjs",
-      "es2015": "./fesm2015/tabularview.mjs",
-      "node": "./fesm2015/tabularview.mjs",
-      "default": "./fesm2020/tabularview.mjs"
+      "types": "./mayanks0307-tabularview.d.ts",
+      "esm2020": "./esm2020/mayanks0307-tabularview.mjs",
+      "es2020": "./fesm2020/mayanks0307-tabularview.mjs",
+      "es2015": "./fesm2015/mayanks0307-tabularview.mjs",
+      "node": "./fesm2015/mayanks0307-tabularview.mjs",
+      "default": "./fesm2020/mayanks0307-tabularview.mjs"
     }
   },
   "sideEffects": false

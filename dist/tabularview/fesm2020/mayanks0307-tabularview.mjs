@@ -307,4 +307,4 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.1.3", ngImpor
  */
 
 export { TabularviewComponent, TabularviewModule, TabularviewService };
-//# sourceMappingURL=tabularview.mjs.map
+//# sourceMappingURL=mayanks0307-tabularview.mjs.map
