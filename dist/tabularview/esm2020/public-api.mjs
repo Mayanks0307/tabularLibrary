@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of tabularview
+ */
+export * from './lib/tabularview.service';
+export * from './lib/tabularview.component';
+export * from './lib/tabularview.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL3RhYnVsYXJ2aWV3L3NyYy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYywyQkFBMkIsQ0FBQztBQUMxQyxjQUFjLDZCQUE2QixDQUFDO0FBQzVDLGNBQWMsMEJBQTBCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIHRhYnVsYXJ2aWV3XG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvdGFidWxhcnZpZXcuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi90YWJ1bGFydmlldy5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvdGFidWxhcnZpZXcubW9kdWxlJztcbiJdfQ==
