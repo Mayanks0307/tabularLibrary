@@ -11,6 +11,20 @@ import { TabularviewModule } from 'tabularview';
 
 In component
 
+column = ['Name', 'Age', 'Address'];
+row = [
+    [
+      'John Brown',
+      32,
+      'New York No. 1 Lake Park'
+    ],
+    [
+      'Jim Green',
+      42,
+      'London No. 1 Lake Park'
+    ],
+  ];
+title = "second component"
 <lib-tabularview
 [column]="column"
 [row]="row"
