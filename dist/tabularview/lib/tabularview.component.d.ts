@@ -2,7 +2,8 @@ import { OnInit } from '@angular/core';
 import * as i0 from "@angular/core";
 export declare class TabularviewComponent implements OnInit {
     column: string[];
-    row: string[][];
+    row: any[][];
+    title: string;
     searchedText: string;
     lastSort: {
         direction: string;
@@ -17,5 +18,5 @@ export declare class TabularviewComponent implements OnInit {
     sort(column: string, index: number): void;
     search(e: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<TabularviewComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<TabularviewComponent, "lib-tabularview", never, { "column": "column"; "row": "row"; }, {}, never, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TabularviewComponent, "lib-tabularview", never, { "column": "column"; "row": "row"; "title": "title"; }, {}, never, never>;
 }

@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # To use it in code
 
-npm i -s @mayanks0307/tabularwidget
+npm i -s @mayanks0307/tabularview
 
 import { TabularviewModule } from 'tabularview';
 
@@ -13,7 +13,8 @@ In component
 
 <lib-tabularview
 [column]="column"
-[row]="row">
+[row]="row"
+title="title">
 </lib-tabularview>
 
 ## Development server

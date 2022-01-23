@@ -4,11 +4,14 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-tabularview',
   template: `
-    <div style="margin: 10px">
-        <div style="float: right;margin:10px 0px">
-            <input class="search" type="text" nz-input (ngModelChange)="search($event)" [ngModel]="searchedText"
-                placeholder="Search" />
-            <!-- (ngModelChange)[ngModel] -->
+    <div style="margin: 10px;font-family: sans-serif">
+        <div style="justify-content: space-between;display: flex;">
+            <div style="text-transform: capitalize;font-size: 24px;align-items: center;display: flex;color:#404b69">{{title}}</div>
+            <div style="float: right;margin:10px 0px">
+                <input class="search" type="text" nz-input (ngModelChange)="search($event)" [ngModel]="searchedText"
+                    placeholder="Search" />
+                <!-- (ngModelChange)[ngModel] -->
+            </div>
         </div>
         <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
@@ -108,7 +111,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TabularviewComponent implements OnInit {
 
   @Input('column') column: string[] = [];
-  @Input('row') row: string[][] = [];
+  @Input('row') row: any[][] = [];
+  @Input('title') title: string = '';
   searchedText = '';
   lastSort = { direction: '', index: 0 };
   listOfColumns = ['Name', 'Age', 'Address'];
@@ -182,14 +186,28 @@ export class TabularviewComponent implements OnInit {
         nextIndex = i + 1;
         shouldSwitch = false;
         if (newDirection == "asc") {
-          if (JSON.stringify(this.Data[i][index]).toLowerCase() > JSON.stringify(this.Data[i + 1][index]).toLowerCase()) {
-            shouldSwitch = true;
-            break;
+          if (typeof this.Data[i][index] == "string") {
+            if (JSON.stringify(this.Data[i][index]).toLowerCase() > JSON.stringify(this.Data[i + 1][index]).toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (this.Data[i][index] > this.Data[i + 1][index]) {
+              shouldSwitch = true;
+              break;
+            }
           }
         } else if (newDirection == "des") {
-          if (JSON.stringify(this.Data[i][index]).toLowerCase() < JSON.stringify(this.Data[i + 1][index]).toLowerCase()) {
-            shouldSwitch = true;
-            break;
+          if (typeof this.Data[i][index] == "string") {
+            if (JSON.stringify(this.Data[i][index]).toLowerCase() < JSON.stringify(this.Data[i + 1][index]).toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (this.Data[i][index] < this.Data[i + 1][index]) {
+              shouldSwitch = true;
+              break;
+            }
           }
         }
       }
