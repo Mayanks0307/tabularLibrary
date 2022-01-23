@@ -1,6 +1,6 @@
 {
-  "name": "tabularwidget",
-  "version": "0.0.0",
+  "name": "@mayanks0307/tabularwidget",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,7 @@
     "test": "ng test",
     "buildtable": "ng build tabularview"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~13.1.0",
     "@angular/cdk": "^13.1.3",
