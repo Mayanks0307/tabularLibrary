@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
 
-# To use it in code
+# To use
 
 npm i -s @mayanks0307/tabularview
 
@@ -25,6 +25,7 @@ row = [
     ],
   ];
 title = "second component"
+
 <lib-tabularview
 [column]="column"
 [row]="row"
