@@ -12,6 +12,7 @@ import { TabularviewModule } from 'tabularview';
 In component
 
 column = ['Name', 'Age', 'Address'];
+
 row = [
     [
       'John Brown',
@@ -24,6 +25,7 @@ row = [
       'London No. 1 Lake Park'
     ],
   ];
+
 title = "second component"
 
 <lib-tabularview
